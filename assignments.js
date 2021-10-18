@@ -34,7 +34,7 @@ const Assignment =mongoose.model("Assignment");
 
 const tasksService = 'http://192.168.1.220:3434/';
 const usersService = 'http://192.168.1.220:3535/';
-const uri ="mongodb+srv://ToDoUser:ToDo%40Password@cluster0.fa1jn.mongodb.net/Assignments?retryWrites=true&w=majority";
+const uri ="mongodb+srv://ToDoUser:ToDoPassword@cluster0.xzi5d.mongodb.net/Assignments?retryWrites=true&w=majority";
 
 
 const connectionParams={
