@@ -3,7 +3,7 @@ const path = require('path');
 const bodyParser = require('body-parser');
 const request = require('request');
 const axios = require('axios')
-const port = process.argv.slice(2)[0];
+const port = process.env.PORT||3002;
 const app = express();
 const cors = require('cors');
 
@@ -32,8 +32,8 @@ const Assignment =mongoose.model("Assignment");
 
 
 
-const tasksService = 'http://192.168.1.220:3434/';
-const usersService = 'http://192.168.1.220:3535/';
+const tasksService = 'https://tasknotesservice.azurewebsites.net/';
+const usersService = 'https://userservice.azurewebsites.net/';
 const uri ="mongodb+srv://ToDoUser:ToDoPassword@cluster0.xzi5d.mongodb.net/Assignments?retryWrites=true&w=majority";
 
 
